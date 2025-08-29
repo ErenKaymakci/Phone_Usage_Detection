@@ -1,0 +1,17 @@
+video:
+  path: "../data/videos/20250718_145802_46039155.mp4"
+
+model:
+  path: "../models/yolov12m.pt"
+  conf_threshold: 0.3
+  iou_threshold: 0.4
+  classes: ["cell phone"] 
+
+tracker:
+  type: "bytetrack"
+  track_thresh: 0.5
+  track_buffer: 30
+  match_thresh: 0.8
+
+usage_rule:
+  movement_threshold: 20
